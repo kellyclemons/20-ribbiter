@@ -6,3 +6,24 @@
 @import 'box-sizing';
 @import 'css-resets';
 @import 'double-container';
+
+
+.top-nav {
+  padding: 0;
+  background: $c-app-green;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-right {
+  display: flex;
+
+  > * {
+    margin: 0 0.8rem;
+  }
+
+}
