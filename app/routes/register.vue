@@ -11,17 +11,17 @@
 
             <div class="form-input">
               <p class="form-input__prompt">Username</p>
-              <input type="text" class="form-input" placeholder="Username" id="username">
+              <input type="text" v-model="formValues.username" class="form-input" placeholder="Username" id="username">
             </div>
 
             <div class="form-input">
               <p class="form-input__prompt">Email</p>
-              <input type="text" class="form-input" placeholder="Email" id="email">
+              <input type="text" v-model="formValues.email" class="form-input" placeholder="Email" id="email">
             </div>
 
             <div class="form-input">
               <p class="form-input__prompt">Password</p>
-              <input type="text" class="form-input" placeholder="Password" id="password">
+              <input type="text" v-model="formValues.password" class="form-input" placeholder="Password" id="password">
             </div>
 
             <div class="form-buttons">
@@ -30,25 +30,47 @@
             </div>
 
           </form>
-
           </div>
+
+        <div class="error" v-if="users.loading === 'error'">
+          <h1>Sorry, there was an error with this username/password</h1>
+        </div>
+
       </div>
     </div>
-
-
   </div>
 </template>
 
 <script>
+import store from '../store';
+import userResource from '../resources/user';
+const {
+  actionCreators: {
+    create
+  }
+} = userResource;
 export default {
   name: 'Register',
   data() {
     return {
+      formValues: {
+        username: '',
+        email: '',
+        password: '',
+      },
+      users: this.$select('users'),
     };
   },
 
   methods: {
-
+    submit() {
+      store.dispatch(create(this.formValues))
+        .then(() => {
+          this.$router.push({
+            name: 'users'
+          });
+        }).catch(() => {});
+    },
   },
 };
 </script>
