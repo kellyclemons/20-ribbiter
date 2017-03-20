@@ -1,0 +1,60 @@
+h1 {
+  margin: 0;
+}
+
+.account {
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+
+  &__heading {
+    background: $c-app-green;
+    color: $c-white;
+  }
+
+  > * {
+    padding: 0.5rem;
+  }
+
+}
+
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 0.3rem solid $c-app-blue;
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &__login {
+    padding: 1rem;
+    outline: none;
+    background: $c-app-lightgrey;
+    color: $c-app-blue;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      transition: background 0.2s ease-in, border 0.2s ease-in, color 0.2s ease-in;
+      background: $c-app-darkgrey;
+    }
+  }
+
+  &__register {
+    padding: 1rem;
+    outline: none;
+    background: $c-app-lightgrey;
+    color: $c-app-blue;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      transition: background 0.2s ease-in, border 0.2s ease-in, color 0.2s ease-in;
+      background: $c-app-darkgrey;
+    }
+  }
+}

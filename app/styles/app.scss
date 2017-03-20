@@ -6,6 +6,8 @@
 @import 'box-sizing';
 @import 'css-resets';
 @import 'double-container';
+@import 'index';
+@import 'register';
 
 a {
   color: inherit;
@@ -30,35 +32,4 @@ a {
     margin: 0 0.8rem;
   }
 
-}
-
-// INDEX
-//
-
-.section {
-  padding: 5rem;
-}
-
-.welcome {
-  background: $c-app-green;
-  box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.4);
-
-  &__heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__bottom {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-  }
-}
-
-.welcome__button {
-  background: $c-app-blue;
-  color: $c-white;
-  padding: 1rem;
-  border-radius: 10%;
 }
