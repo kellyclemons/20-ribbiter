@@ -9,6 +9,7 @@
 @import 'index';
 @import 'register';
 @import 'login';
+@import 'ribbits-index';
 
 a {
   color: inherit;
@@ -18,6 +19,7 @@ a {
 .top-nav {
   padding: 0;
   background: $c-app-green;
+  color: $c-white;
 }
 
 .navbar {

@@ -4,15 +4,18 @@
       <div class="container">
         <div class="main">
           <div class="welcome">
-            <div class="welcome__heading">
-              <h1>Welcome to Ribbiter</h1>
+            <p class="welcome__heading">
+              Welcome To Ribbiter!
             </div>
-            <div class="welcome__bottom">
-              <div class="welcome__button">
-                <router-link class="register-button" :to="{ name: 'register' }">Register</router-link>
-              </div>
-              <div class="welcome__button">
-                <router-link class="login-button" :to="{ name: 'login' }">Login</router-link>
+            <div class="start-card">
+              <p class="welcome__subheading">Let's Get Started!</p>
+              <div class="welcome__bottom">
+                <div class="welcome__button">
+                  <router-link class="login-button" :to="{ name: 'login' }">Login</router-link>
+                </div>
+                <div class="welcome__button">
+                  <router-link class="register-button" :to="{ name: 'register' }">Sign Up</router-link>
+                </div>
               </div>
             </div>
 

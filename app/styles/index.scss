@@ -2,30 +2,41 @@
 //
 
 .section {
-  padding: 5rem;
+  // padding: 5rem;
+}
+
+.start-card {
+  // background: $c-app-green;
+  box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.4);
+}
+
+.welcome__subheading {
+  padding: 1rem;
+  margin: 0;
+  background: $c-app-green;
+  color: $c-white;
 }
 
 .welcome {
-  background: $c-app-green;
-  box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.4);
 
   &__heading {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    border-bottom: 1px solid $c-app-blue;
+    font-size: 1.5rem;
+    // align-items: center;
+    // justify-content: center;
   }
 
   &__bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1rem;
   }
 }
 
 .welcome__button {
   padding: 1rem;
-  border-radius: 10%;
-  background: $c-app-blue;
+  background: $c-app-green;
   color: $c-white;
   // box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.4);
 }

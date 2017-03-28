@@ -21,12 +21,12 @@
 
             <div class="form-input">
               <p class="form-input__prompt">Password</p>
-              <input type="text" v-model="formValues.password" class="form-input" placeholder="Password" id="password">
+              <input type="password" v-model="formValues.password" class="form-input" placeholder="Password" id="password">
             </div>
 
             <div class="form-buttons">
               <router-link class="form-buttons__login" :to="{ name: 'login' }">Login</router-link>
-              <div class="form-buttons__register">Sign Up</div>
+              <button class="form-buttons__register">Sign Up</button>
             </div>
 
           </form>

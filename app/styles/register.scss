@@ -47,6 +47,8 @@ input {
   &__register {
     padding: 1rem;
     outline: none;
+    border: 0;
+    font: inherit;
     background: $c-app-lightgrey;
     color: $c-app-blue;
     text-decoration: none;
