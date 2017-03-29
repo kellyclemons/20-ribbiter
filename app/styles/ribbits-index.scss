@@ -35,8 +35,8 @@
   }
 
   &__contents {
-    border-bottom: 1px solid $c-app-blue;
     padding: 1rem;
+    border-bottom: 1px solid $c-app-blue;
   }
 
   &__contents-heading {
@@ -86,18 +86,28 @@ textarea {
 .load-ribbits__button {
   display: block;
   width: 100%;
-  text-align: center;
-  background: $c-app-lightgrey;
-
-  cursor: pointer;
   padding: 0.5rem 1rem;
   border: 0;
+  background: $c-app-lightgrey;
+
   color: $c-app-blue;
   font: inherit;
+  text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .card-row {
-  padding: 1rem .5rem;
-  border-top: .1rem solid $c-app-blue;
+  padding: 1rem 0.5rem;
+  border-top: 0.1rem solid $c-app-blue;
+
+  &__link {
+    color: $c-app-blue;
+  }
+}
+
+button {
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
 }

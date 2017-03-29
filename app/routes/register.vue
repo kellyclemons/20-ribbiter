@@ -26,7 +26,7 @@
 
             <div class="form-buttons">
               <router-link class="form-buttons__login" :to="{ name: 'login' }">Login</router-link>
-              <button class="form-buttons__register">Sign Up</button>
+              <button class="form-buttons__register" type="submit">Sign Up</button>
             </div>
 
           </form>

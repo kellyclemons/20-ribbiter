@@ -46,11 +46,11 @@ input {
 
   &__register {
     padding: 1rem;
-    outline: none;
     border: 0;
-    font: inherit;
+    outline: none;
     background: $c-app-lightgrey;
     color: $c-app-blue;
+    font: inherit;
     text-decoration: none;
     cursor: pointer;
 
