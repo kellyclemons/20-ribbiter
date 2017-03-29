@@ -1,0 +1,12 @@
+.login {
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+
+  &__heading {
+    background: $c-app-green;
+    color: $c-white;
+  }
+
+  > * {
+    padding: 0.5rem;
+  }
+}

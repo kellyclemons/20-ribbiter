@@ -4,3 +4,35 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+@import 'css-resets';
+@import 'double-container';
+@import 'index';
+@import 'register';
+@import 'login';
+@import 'ribbits-index';
+
+a {
+  color: inherit;
+  // text-decoration: none;
+}
+
+.top-nav {
+  padding: 0;
+  background: $c-app-green;
+  color: $c-white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-right {
+  display: flex;
+
+  > * {
+    margin: 0 0.8rem;
+  }
+
+}

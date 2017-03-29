@@ -1,0 +1,113 @@
+.section {
+  background: $c-app-background;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+
+  &__item {
+    flex-basis: calc(100%/3 - 2rem);
+    flex-grow: 1;
+    margin: 1rem;
+    background: $c-white;
+  }
+}
+
+.ribbits-heading {
+  display: flex;
+  border-bottom: 1px solid $c-app-blue;
+  font-size: 1.5rem;
+}
+
+// LEFT CARD
+
+.new-card {
+  // padding: 1rem;
+  box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.4);
+
+  &__heading {
+    margin: 0;
+    padding: 1rem;
+    background: $c-app-green;
+    color: $c-white;
+  }
+
+  &__contents {
+    padding: 1rem;
+    border-bottom: 1px solid $c-app-blue;
+  }
+
+  &__contents-heading {
+    margin: 0;
+  }
+}
+
+textarea {
+  margin-top: 0.2rem;
+  border: 0;
+  border-bottom: 0.2rem solid $c-app-blue;
+  outline: none;
+  background: $c-app-lightgrey;
+  font: inherit;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &-clear {
+    padding: 1rem;
+    outline: none;
+    background: $c-app-lightgrey;
+    color: $c-app-blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &-save {
+    padding: 1rem;
+    outline: none;
+    background: $c-app-green;
+    color: $c-white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+// RIGHT CARD
+
+.happening-contents {
+  padding: 1rem 0.5rem;
+}
+
+.load-ribbits__button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: $c-app-lightgrey;
+
+  color: $c-app-blue;
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-row {
+  padding: 1rem 0.5rem;
+  border-top: 0.1rem solid $c-app-blue;
+
+  &__link {
+    color: $c-app-blue;
+  }
+}
+
+button {
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
